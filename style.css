@@ -1,0 +1,65 @@
+body {
+    background-color: #ADD1D1;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculadora {
+    background-color: #D0B8AC;
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    border-radius: 32px;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #D0B8AC;
+    box-shadow: 9px 9px 24px #b19c92, -9px -9px 24px #efd4c6;
+}
+
+button:active {
+    background-color: #97867e;
+}
+
+.display{
+    /* Le damos ancho total*/
+    grid-column: 1/-1;
+    padding: 16px;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    background-color: #EFE5DC;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 9px 9px 24px #b19c92, -9px -9px 24px #efd4c6;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+#valor-actual{
+    font-size: 1.5em;
+}
+
+#valor-anterior{
+    font-size: 2em;
+}
